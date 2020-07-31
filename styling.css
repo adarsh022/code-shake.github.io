@@ -2,8 +2,9 @@ body,html{
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
-	background: #32312F;
+	background: #F49281;
 	color: #FFFFFF;
+/*	opacity: 50%;*/
 }
 
 #header {
@@ -12,13 +13,14 @@ body,html{
 	flex-direction: row;
 	align-content: space-between;
 	flex-wrap: nowrap;
+	background: #161616;
 }
 
 #header1 {
 	flex:1 0 auto;
 	font-size: 40px;
 	margin:0px;
-	background: #32312F;
+	background: #161616;	
 	padding: 30px;
 }
 
@@ -35,7 +37,7 @@ body,html{
 }
 
 #header2 {
-	background: #32312F;
+	background: #161616;
 	flex:2 0 auto;
 	font-size: 20px;
 	text-align: center;
@@ -369,28 +371,60 @@ body,html{
 }
 
 #letter2 {
+	margin: auto;
+	display: flex;
 	text-align: center;
+	flex-wrap: wrap;
 }
 
 #footer {
-	border: 1px solid black;
-	margin: 5px;
 	text-align: center;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	background: #161616;
+	flex-wrap: nowrap;
+	align-content: space-between;
+	text-align: center;
 }
 
 #footer1 {
-	border: 1px solid black;
-	margin: 5px;
+	margin: auto;
 	flex: 1;
+	text-align: center;
+	align-content: center;
+	margin: auto;
+	order: 2;	
+}
+
+#footer1 p{margin: 5px;}
+#footer1 a{
+	color: #0DC5A0;
+	text-decoration: none;
+	
 }
 
 #footer2 {
-	border: 1px solid black;
-	margin: 5px;
+
 	flex: 1;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	
 }
+#footer2 ul li{
+	text-decoration: none;
+	list-style: none;
+	flex: 0;
+	margin: 0;
+	padding: 0;
+	margin: 0 20px;
+}
+
+#footer2 ul{
+	flex: 1 0 auto;
+	display: flex;
+}
+#
 
 #footer3 {
 	border: 1px solid black;
@@ -402,6 +436,7 @@ body,html{
 	height: auto;
 	width: 80%;
 	margin: 0 auto;
+	background:#32312F;
 }
 
 #container2{
@@ -468,16 +503,13 @@ body,html{
 }
 
 #myself {
-	border: solid 1px black;
-	margin: 5px;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
 }
 
 #myself1 {
-	border: solid 1px black;
-	margin: 5px;
+	padding-right: 10px;
 	flex: 1;
 	text-align: center;
 }
@@ -494,14 +526,11 @@ body,html{
 }
 
 #myself2 {
-	border: solid 1px black;
-	margin: 5px;
+	padding-left:10px;
 	flex: 1;
 }
 
 #myself21 {
-	border: solid 1px black;
-	margin: 5px;
 	flex: 1;
 }
 
@@ -528,27 +557,7 @@ body,html{
 .photoshop {width: 60%; background-color: #0DC5A0;}
 .python {width: 80%; background-color: #0DC5A0;}
 
-
-
-
-
-
-
-
-
-
-
 #letter21 {
-	height: 30px;
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	background: #161616;
-	padding: 20px;
-	border: 20px;
-}
-
-#letter23 {
 	margin: auto;
 	height: 30px;
 	font-size: 15px;
@@ -557,6 +566,23 @@ body,html{
 	background: #161616;
 	padding: 20px;
 	border: 20px;
+	flex: 1;
+	border-radius: 100px;
+	margin: 10px;
+}
+
+#letter23  {
+	padding:0;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #757575;
+	background: #161616;
+	margin:10px;
+	padding: 10px;
+	border: 20px;
+	flex: 1 0 auto;
+	border: 1px solid ##757575;
+	border-radius: 100px;
 }
 
 #letter22 {
@@ -567,6 +593,12 @@ body,html{
 	background: #161616;
 	padding: 20px;
 	border: 20px;
+	flex: 1;
+	border-radius: 100px;
+	margin: 10px;
 }
 
-
+#skills {
+	font-weight: bold;
+	text-align: center;
+}

@@ -4,7 +4,7 @@ body,html{
 	border: 0px;
 	background:linear-gradient(to left,#161616,#181817,#161616);
 	color: #FFFFFF;
-/*	font-family: Arial;*/
+	font-family: Arial;
 }
 
 #header {

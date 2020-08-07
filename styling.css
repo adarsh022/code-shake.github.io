@@ -61,6 +61,7 @@ body,html{
 	
 	#header1{
 		margin: auto;
+		font-family: sanf;
 	}
     #header2 ul{
         border-right: none;
@@ -505,11 +506,15 @@ body,html{
     #myself{
         flex-direction: column;
         align-content: center;
-		flex-wrap: wrap;
+		flex-wrap: wrap;		
     }
 	
 	#myself1{
 		margin: auto;
+	}
+	
+	#myself1 p {
+		font-family: monospace;
 	}
 }
 

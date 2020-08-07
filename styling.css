@@ -5,6 +5,7 @@ body,html{
 	background:linear-gradient(to left,#161616,#181817,#161616);
 	color: #FFFFFF;
 /*	opacity: 50%;*/
+	font-family: Arial;
 }
 
 #header {
@@ -14,6 +15,7 @@ body,html{
 	align-content: space-between;
 	flex-wrap: nowrap;
 	background: #161616;
+	font-family: sans;
 }
 
 #header1 {
@@ -40,6 +42,7 @@ body,html{
 	background: #161616;
 	flex:2 0 auto;
 	font-size: 20px;
+	font-family: monospace;
 	text-align: center;
 	margin: auto;
 	align-content: space-around;
@@ -75,6 +78,11 @@ body,html{
 	color:#FFFFFF;
 	align-content: space-around;
 	text-align: center;
+	border: solid 1px #161616;
+	border-radius: 20px;
+	background: #161616;
+	padding: 10px 20px;
+
 }
 
 #header2 ul {
@@ -88,13 +96,9 @@ body,html{
 	flex: 1;
 	float: left;
 	list-style: none;
-	padding: 20px;
+	padding: 20px 0;
 	margin: auto;
-}
-
-#header2 ul li{
 	flex: 1 0 auto;
-	
 }
 
 #header2 ul li a:hover{
@@ -126,37 +130,48 @@ body,html{
 }
 
 #intro1 {
-
 	flex: 1;
 }
 
 #intor11 {
-
 	font-size: 60px;
+	font-family: sans-serif;
 	font-weight: bold;
 	text-align: center;
-/*	background: #32312F;*/
 	color: #FFFFFF;
 }
 
+#intro12 p{
+	margin:0 ;
+}
+@media screen and (max-width: 1000px){
+	#intor11 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#intor11 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	}
+}
 #intro12 {
 	color: #FFFFFF;
-/*	background: #32312F;*/
 	text-align: justify;
 	font-size: 25px;
+	font-family: Arial;
 	padding: 10px;
 }
 
 #intro13 {
 	display: flex;
 	flex-direction: row;
-}
-
-#intro2 {
-	flex: 1;
-	border: 1px solid black;
-	margin: 5px;
-	
 }
 
 #intro132 {
@@ -166,14 +181,19 @@ body,html{
 
 	justify-content: space-around;
 }
+
+#intro2 {
+	flex: 1;
+	border: 1px solid black;
+	margin: 5px;
+	
+}
+
 #intro132 a{
 	color: #FFFFFF;
 	text-decoration: none;
 	font-size: 20px;
-	margin: auto;
 	padding: 0px 25px;
-	text-align: center;
-	justify-content: space-around;
 	background: url(images/arrow.png) no-repeat right center;
 }
 
@@ -191,18 +211,14 @@ body,html{
 #intro131 {
 	display: flex;
 	flex: 1;
-	align-content: center;
-	justify-content: space-around;
 }
 #intro131 a{
-	text-align: center;
 	border: solid 10px #FFFFFF;
 	border-radius: 100px;
 	background: #FFFFFF;
 	color: #32312F;
 	font-size: 20px;
 	text-decoration: none;
-	text-align: center;
 	margin: auto;
 }
 
@@ -227,6 +243,7 @@ body,html{
 	flex: 1;
 	text-align: center;
 	font-size: 40px;
+	font-family: sans;
 }
 #about p{
 	margin: 0;
@@ -243,34 +260,6 @@ body,html{
 	margin: 5px 20px;
 }
 
-
-
-#about212 {
-	border: 1px solid black;
-	margin: 5px;
-	
-}
-
-#about213 {
-	border: 1px solid black;
-	margin: 5px;
-}
-
-#about214 {
-	border: 1px solid black;
-	margin: 5px;
-}
-
-#about215 {
-	border: 1px solid black;
-	margin: 5px;
-}
-
-#about216 {
-	border: 1px solid black;
-	margin: 5px;
-}
-
 # {
 	border: 1px solid black;
 	margin: 5px;
@@ -283,6 +272,7 @@ body,html{
 	border-bottom:  1px dotted black;
 	text-align: center;
 	font-size: 40px;
+	font-family: sans;
 	flex: 1;
 }
 
@@ -341,12 +331,6 @@ body,html{
 	text-align: center;
 }
 
-#project23 {
-	border: 1px solid black;
-	margin: 5px;
-	text-align: center;
-}
-
 #project231 {
 	border: 1px solid black;
 	margin: 5px;
@@ -354,12 +338,6 @@ body,html{
 }
 
 #project232 {
-	border: 1px solid black;
-	margin: 5px;
-	text-align: center;
-}
-
-#project24 {
 	border: 1px solid black;
 	margin: 5px;
 	text-align: center;
@@ -549,7 +527,9 @@ body,html{
 
 #myself1 p{
 	font-size: 15px;
+	font-family: monospace;
 	font-weight: bold;
+	font-size: 20px;
 }
 
 #myself2 {
@@ -629,4 +609,6 @@ body,html{
 #skills {
 	font-weight: bold;
 	text-align: center;
+	font-family: monospace;
+	font-size: 20px;
 }

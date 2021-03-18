@@ -159,6 +159,32 @@ header {
 /* hamberger menu  */
 /* hamberger  menu */
 
+/*QUOTE GENERATOR*/
+
+.quoteGenerator {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#quote {
+  color: #fff;
+  text-align: center;
+}
+#author {
+  float: right;
+  color: #9bf1ff;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#btn {
+  cursor: pointer;
+}
+
+/*QUOTE GENERATOR*/
+
 @media only screen {
 } /* Define mobile styles */
 

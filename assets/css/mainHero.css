@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Cormorant+Unicase:wght@300&family=Lora:ital@1&family=Roboto+Slab&display=swap");
 
 * {
   margin: 0;
@@ -47,6 +47,7 @@ header {
   font-size: 1.25em;
   margin: 0.75em 0 0.25em 0;
   opacity: 0.75;
+  font-family: "Roboto Slab", serif;
 }
 
 /* NAV BAR*/
@@ -160,13 +161,17 @@ header {
   color: #fff;
   margin: 0;
   text-align: center;
-  font-family: "Great Vibes", cursive;
+  font-size: 1em;
+  font-family: "Spirax", cursive;
+  font-family: "Lora", serif;
 }
 
 #author {
   float: right;
   color: #9bf1ff;
-  font-weight: bold;
+  margin-top: 5px;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.1em;
 }
 
 #btn {
@@ -293,7 +298,7 @@ header {
   #quote {
     width: 100%;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.7em;
   }
 
   .quote-box {
@@ -302,13 +307,17 @@ header {
 
   .quoteGenerator {
     position: absolute;
-    top: 80%;
+    top: 92%;
   }
 
   #author {
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 500;
     margin-top: 5px;
+  }
+
+  .heroSection p {
+    font-size: 0.7em;
   }
 } /* max-width 640px, mobile-only styles */
 

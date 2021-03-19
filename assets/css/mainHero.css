@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
 }
@@ -27,13 +28,16 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+  width: 80%;
 }
 
 .heroSection h1 {
+  text-align: center;
   font-size: 4.35em;
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: -0.035em;
   line-height: 1em;
+  font-family: "Roboto Slab", serif;
 }
 
 .heroSection p {
@@ -53,7 +57,7 @@ header {
   align-items: center;
   font-weight: bold;
   width: 100%;
-  font-size: 15px;
+  font-size: 1em;
   padding-bottom: 10px;
   font-family: "Josefin Sans", sans-serif;
   top: 4%;
@@ -154,9 +158,11 @@ header {
 
 #quote {
   color: #fff;
+  margin: 0;
   text-align: center;
   font-family: "Great Vibes", cursive;
 }
+
 #author {
   float: right;
   color: #9bf1ff;
@@ -276,6 +282,34 @@ header {
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
+  .heroSection h1 {
+    font-size: 2em;
+  }
+
+  .heroSection p {
+    font-size: 1em;
+  }
+
+  #quote {
+    width: 100%;
+    text-align: center;
+    font-size: 0.5em;
+  }
+
+  .quote-box {
+    width: 100%;
+  }
+
+  .quoteGenerator {
+    position: absolute;
+    top: 90%;
+  }
+
+  #author {
+    font-size: 0.7em;
+    font-weight: 500;
+    margin-top: 5px;
+  }
 } /* max-width 640px, mobile-only styles */
 
 @media only screen and (min-width: 40.063em) {
@@ -285,6 +319,7 @@ header {
 } /* min-width 641px and max-width 1024px */
 
 @media only screen and (min-width: 64.063em) {
+  /* to add hamburger menu  */
 } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {

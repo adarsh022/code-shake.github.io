@@ -293,7 +293,7 @@ header {
   #quote {
     width: 100%;
     text-align: center;
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 
   .quote-box {
@@ -306,7 +306,7 @@ header {
   }
 
   #author {
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: 500;
     margin-top: 5px;
   }

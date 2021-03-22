@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/mainHero.css" />
+    <link rel="stylesheet" href="./assets/css/all.css" />
 
     <title>Adarsh Pandey</title>
   </head>
@@ -220,64 +221,76 @@
       <!-- PROJECTS -->
 
       <!-- FORM  -->
-      <div class="contactBanner">
-        <h1>Get In Touch</h1>
-      </div>
       <section class="contact" id="contact">
-        <div id="container">
-          <span class="input">
-            <input type="text" class="input__field" id="input-1" />
-            <label for="input-1" class="input__label">
-              <span class="input__label-content">First Name</span>
-            </label>
-          </span>
-          <span class="input">
-            <input type="text" class="input__field" id="input-2" />
-            <label for="input-2" class="input__label">
-              <span class="input__label-content">Last Name</span>
-            </label>
-          </span>
-          <span class="input">
-            <input class="input__field removeArrow" id="input-3" />
-            <label for="input-3" class="input__label">
-              <span class="input__label-content">Phone Number</span>
-            </label>
-          </span>
-          <span class="input">
-            <input
-              type="text"
-              class="input__field"
-              id="input-4"
-              style="text-transform: none"
-            />
-            <label for="input-4" class="input__label">
-              <span class="input__label-content">Email Address</span>
-            </label>
-          </span>
-          <span class="input message">
-            <textarea
-              class="input__field"
-              id="input-5"
-              style="text-transform: none"
-            ></textarea>
-            <label for="input-5" class="input__label">
-              <span class="input__label-content">Message</span>
-            </label>
-          </span>
-          <button id="send-button" type="button">Send</button>
-        </div>
+        <form action="">
+          <fieldset>
+            <legend>Get In Touch:</legend>
+            <div id="container">
+              <span class="input">
+                <input type="text" class="input__field" id="input-1" />
+                <label for="input-1" class="input__label">
+                  <span class="input__label-content">First Name</span>
+                </label>
+              </span>
+              <span class="input">
+                <input type="text" class="input__field" id="input-2" />
+                <label for="input-2" class="input__label">
+                  <span class="input__label-content">Last Name</span>
+                </label>
+              </span>
+              <span class="input">
+                <input class="input__field removeArrow" id="input-3" />
+                <label for="input-3" class="input__label">
+                  <span class="input__label-content">Phone Number</span>
+                </label>
+              </span>
+              <span class="input">
+                <input
+                  type="text"
+                  class="input__field"
+                  id="input-4"
+                  style="text-transform: none"
+                />
+                <label for="input-4" class="input__label">
+                  <span class="input__label-content">Email Address</span>
+                </label>
+              </span>
+              <span class="input message">
+                <textarea
+                  class="input__field"
+                  id="input-5"
+                  style="text-transform: none"
+                ></textarea>
+                <label for="input-5" class="input__label">
+                  <span class="input__label-content">Message</span>
+                </label>
+              </span>
+              <button id="send-button" type="button">Send</button>
+            </div>
+          </fieldset>
+        </form>
+
         <div class="admin_info">
           <div class="email">
-            <div class="info_align"><h2>Email</h2></div>
-            <p>adarshpandey022@gmail.com</p>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <div class="info_align">
+              <h2>Email</h2>
+              <p>adarshpandey022@gmail.com</p>
+            </div>
           </div>
           <div class="phone">
-            <div class="info_align"><h2>Phone</h2></div>
-            <p>9654054948</p>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <div class="info_align">
+              <h2>Phone</h2>
+              <p>9654054948</p>
+            </div>
           </div>
           <div class="address">
-            <div class="info_align"><h2>Address</h2></div>
-            <p>Sainik Farm, New Delhi</p>
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <div class="info_align">
+              <h2>Address</h2>
+              <p>Sainik Farm, New Delhi</p>
+            </div>
           </div>
         </div>
       </section>
@@ -286,14 +299,17 @@
         <div class="inner">
           <ul class="icons">
             <li>
-              <a href="#" class="icon brands alt fa-twitter"
-                ><span class="label">Email</span></a
+              <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span class="label">Email</span></a
               >
             </li>
 
             <li>
-              <a href="#" class="icon brands alt fa-github"
-                ><span class="label">GitHub</span></a
+              <a href="#">
+                <i class="fa fa-github" aria-hidden="true"></i>
+
+                <span class="label">GitHub</span></a
               >
             </li>
           </ul>

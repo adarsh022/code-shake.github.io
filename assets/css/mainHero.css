@@ -423,13 +423,9 @@ button.primary {
 /*CONTACT */
 
 .contact {
-  background-color: #242943;
+  background-color: #00356b;
   display: grid;
   grid-template-columns: 5fr 3fr;
-}
-
-form {
-  /* padding: 30px; */
 }
 
 legend {
@@ -443,7 +439,7 @@ legend {
 fieldset {
   margin: 20px;
   border: 10px solid transparent;
-  border: 3px solid #6a7989;
+  border: 3px solid #fff;
   box-sizing: border-box;
   grid-area: 1 / 1;
   padding: 20px;
@@ -571,7 +567,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #6a7989;
+  background: #fff;
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
 }
@@ -636,89 +632,51 @@ textarea {
 /* MAIN SECTION  */
 
 /* footer */
-
 .site-footer {
-  position: relative;
-  background-color: #242943;
-  width: 100%;
-  bottom: 0;
-  border: 0;
-}
-
-.site-footer .container2 {
-  max-width: 90%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  padding-top: 20px;
-}
-
-.site-footer .container2 h1 {
-  font-size: 40px;
-}
-
-.site-footer .container2 h2 {
-  font-size: 40px;
-  float: right;
-}
-
-.site-footer .grid-container a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 16.25px;
-}
-
-.site-footer .grid-item {
+  background-color: #00356b;
+  padding: 0px 50px;
   display: flex;
+  flex-direction: column;
+}
+
+.flex-container {
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.flex-container h1 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.footer-list {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.footer-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0px 10px;
+}
+
+.social-buttons {
+  display: flex;
+  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
   color: white;
 }
 
-.site-footer .grid-container .inner-grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  text-align: left;
-}
-
-.inner-grid-container a {
-  padding: 0 20px;
-}
-
-.social-buttons {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-
-.site-footer .container2 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid white;
-  margin: 1px;
-  padding: 0;
-}
-
-.site-footer .container2 p {
-  font-size: 14px;
-  text-align: right;
-  color: white;
-  font-weight: 500;
-}
-
-.site-footer .container2 .logo-img {
-  width: 180px;
-  height: 140px;
-  cursor: pointer;
-}
-
-.site-footer .grid-container .grid-item {
-  padding: 10px 0;
-}
-
-.site-footer .grid-container .grid-item .social-buttons a {
+.site-footer .social-buttons a {
   display: inline-flex;
   text-decoration: none;
   font-size: 30px;
@@ -731,11 +689,11 @@ textarea {
   margin: 0 8px;
 }
 
-.site-footer .grid-container .grid-item .social-buttons a i {
+.site-footer .social-buttons a i {
   transition: 0.3s ease-in;
 }
 
-.site-footer .grid-container .grid-item .social-buttons a:hover i {
+.site-footer .social-buttons a:hover i {
   background: linear-gradient(45deg, #03bfcb, white);
   -webkit-text-fill-color: #242943;
 }
@@ -746,42 +704,10 @@ textarea {
   border-radius: 50%;
 }
 
-/*------------------------------------------------------------------
-[ Screen Sizes] */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .site-footer {
-    /* height: 620px; */
-    bottom: 0;
-  }
-
-  .site-footer .grid-container .inner-grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: left;
-  }
-}
-
-/*========================================================*/
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .site-footer {
-    /* height: 260px; */
-    bottom: 0;
-  }
-
-  .site-footer .grid-container {
-    display: grid;
-    grid-template-columns: 350px auto 350px;
-  }
-
-  .site-footer .grid-container .inner-grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    text-align: left;
-  }
+.site-footer p {
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
 }
 
 /* footer  */
@@ -874,6 +800,11 @@ textarea {
     margin: 0;
   }
 
+  .admin_info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .admin_info > div {
     border-top: 3px;
     padding: 20px;
@@ -883,8 +814,8 @@ textarea {
 @media only screen and (min-width: 40.063em) {
 } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-} /* min-width 641px and max-width 1024px */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+}
 
 @media only screen and (min-width: 64.063em) {
   /* to add hamburger menu  */

@@ -631,57 +631,157 @@ textarea {
   font-family: "Lato";
 }
 
-.footer {
-  position: absolute;
-  color: grey;
-  font-family: Lato;
-  text-align: right;
-  font-size: 8px;
-  right: 30px;
-  bottom: 15px;
-}
-
 /*CONTACT*/
 
 /* MAIN SECTION  */
 
 /* footer */
 
-footer {
+.site-footer {
+  position: relative;
+  background-color: #242943;
+  width: 100%;
+  bottom: 0;
+  border: 0;
+}
+
+.site-footer .container2 {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.site-footer .container2 h1 {
+  font-size: 40px;
+}
+
+.site-footer .container2 h2 {
+  font-size: 40px;
+  float: right;
+}
+
+.site-footer .grid-container a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 16.25px;
+}
+
+.site-footer .grid-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #242943;
+  color: white;
 }
 
-.inner {
-  margin: 20px;
+.site-footer .grid-container .inner-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: left;
 }
 
-.icons {
+.inner-grid-container a {
+  padding: 0 20px;
+}
+
+.social-buttons {
   display: flex;
-  /* margin-bottom: 5vh; */
-  list-style-type: none;
+  justify-items: center;
+  align-items: center;
 }
 
-.icons li a {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.5em;
-  font-weight: 800;
-  margin-right: 30px;
+.site-footer .container2 hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid white;
+  margin: 1px;
+  padding: 0;
 }
 
-.icons li a:hover {
-  margin: 2px solid #fff;
-  color: #00a0c6;
-  text-decoration: none;
+.site-footer .container2 p {
+  font-size: 14px;
+  text-align: right;
+  color: white;
+  font-weight: 500;
+}
+
+.site-footer .container2 .logo-img {
+  width: 180px;
+  height: 140px;
   cursor: pointer;
 }
 
-.inner ul li {
-  padding: 0 1em 0 0;
+.site-footer .grid-container .grid-item {
+  padding: 10px 0;
+}
+
+.site-footer .grid-container .grid-item .social-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  color: #1a1f24;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.site-footer .grid-container .grid-item .social-buttons a i {
+  transition: 0.3s ease-in;
+}
+
+.site-footer .grid-container .grid-item .social-buttons a:hover i {
+  background: linear-gradient(45deg, #03bfcb, white);
+  -webkit-text-fill-color: #242943;
+}
+
+.circle-icon {
+  background: white;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+/*------------------------------------------------------------------
+[ Screen Sizes] */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .site-footer {
+    /* height: 620px; */
+    bottom: 0;
+  }
+
+  .site-footer .grid-container .inner-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+  }
+}
+
+/*========================================================*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .site-footer {
+    /* height: 260px; */
+    bottom: 0;
+  }
+
+  .site-footer .grid-container {
+    display: grid;
+    grid-template-columns: 350px auto 350px;
+  }
+
+  .site-footer .grid-container .inner-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: left;
+  }
 }
 
 /* footer  */

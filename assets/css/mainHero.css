@@ -63,9 +63,9 @@ header {
   font-size: 1em;
   padding-bottom: 10px;
   font-family: "Josefin Sans", sans-serif;
-  top: 3.5%;
+  /* top: 3.5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   color: #fff;
   z-index: 10;
 }

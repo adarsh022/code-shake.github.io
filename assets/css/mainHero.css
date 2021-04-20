@@ -634,7 +634,6 @@ textarea {
 /* footer */
 .site-footer {
   background-color: #00356b;
-  padding: 0px 50px;
   display: flex;
   flex-direction: column;
 }
